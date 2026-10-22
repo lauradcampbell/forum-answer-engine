@@ -1,0 +1,24 @@
+{
+  "name": "forum-answer-engine-example",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A miniature, runnable version of the Forum Answer Engine's matching pipeline, on invented data.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test-set": "tsx src/run-test-set.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "openai": "^7.25.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

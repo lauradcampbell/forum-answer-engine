@@ -9,8 +9,9 @@
 genuinely solves, drafts a reply, and puts it in front of the marketer who owns that app. A person
 reviews and posts every reply.**
 
-> This is a write-up, not the code. I built it for my employer and the code belongs to them, so this
-> repo explains what I built and how it works. It doesn't name the company, the platform or the apps.
+> I built this for my employer, and the real code belongs to them. This repo explains what I built
+> and how it works, without naming the company, the platform or the apps. The [`example/`](example/)
+> folder is a small, runnable version of the matching pipeline that I wrote from scratch on invented data.
 
 ## Why it exists
 
@@ -60,6 +61,15 @@ flowchart TD
 - **A person always decides.** The engine never posts anything. A bot posting replies on a product
   forum would be spam, however good the replies. The engine does the part no one had time for,
   reading everything, and a person does the part that needs judgment.
+
+## Try it
+
+[`example/`](example/) runs the pipeline on 14 invented forum questions, half of them traps, and
+reports what it got right. It runs offline, or with OpenAI and Claude if you set API keys.
+
+```bash
+cd example && npm install && npm run test-set
+```
 
 ## How I built it
 
